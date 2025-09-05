@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<main class="converter-container">
+    <form action="" class="converter-form">
+        <h1>Currency Converter</h1>
+        <div class="form-row">
+            <label for="from-input">From</label>
+            <input type="number" id="from-input" value="1" name="from-amount">
+            <div class="currency-selector">
+                <img src="https://flagsapi.com/IN/shiny/64.png" >
+                <select name="from-currency"></select>
+            </div>
+        </div>
+
+        <div class="swap-icon">
+         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+
+        <div class="form-row">
+            <label for="to-input">To</label>
+            <input type="number" id="to-input" placeholder="Result" name="to-amount" disabled>
+          <div class="currency-selector">
+            <img src="https://flagsapi.com/US/shiny/64.png">
+                <select name="to-currency"></select>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Get Exchange Rate</button>
+    </form>
+</main>
+   
+<script src="./code.js"></script>
+<script src="./index.js"></script>
+     
+</body>
+</html>
