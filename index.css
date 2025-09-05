@@ -31,7 +31,7 @@ body
 .converter-container
 {
   width: 40%;
-  min-width: 350px;
+  min-width: 300px;
   padding: 2rem;
   background: var(--background-color);
   border-radius: 16px;
@@ -158,5 +158,6 @@ font-weight: 500;
 .submit-btn:hover {
   background-color: var(--primary-hover-color);
 }
+
 
 
